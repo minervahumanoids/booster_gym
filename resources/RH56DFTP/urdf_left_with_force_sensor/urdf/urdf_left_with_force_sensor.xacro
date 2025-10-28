@@ -1,0 +1,1657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="urdf_left_with_force_sensor">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="2e-05 -0.0024500000000000004 0.07793000000000001"
+        rpy="0 0 0" />
+      <mass
+        value="0.6273500000000001" />
+      <inertia
+        ixx="0.0014968368000000001"
+        ixy="1.64393e-06"
+        ixz="-2.527401e-05"
+        iyy="0.0017872599099999999"
+        iyz="0.00012212543"
+        izz="0.00071434062" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="left_thumb_1">
+    <inertial>
+      <origin
+        xyz="-0.026949999999999998 0.01478 0.07485"
+        rpy="0 0 0" />
+      <mass
+        value="0.02407" />
+      <inertia
+        ixx="3.0396799999999998e-06"
+        ixy="-1.2416e-07"
+        ixz="8.392e-08"
+        iyy="1.62329e-06"
+        iyz="6.3491e-07"
+        izz="2.25191e-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/left_thumb_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/left_thumb_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_thumb_1_joint"
+    type="revolute">
+    <origin
+      xyz="0.0269 0.02101 0.0689"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_thumb_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.1641"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="left_thumb_2">
+    <inertial>
+      <origin
+        xyz="-0.07454999999999999 0.03374 0.09742"
+        rpy="0 0 0" />
+      <mass
+        value="0.01122" />
+      <inertia
+        ixx="1.11059e-06"
+        ixy="-1.5098e-07"
+        ixz="-3.9131000000000003e-07"
+        iyy="1.5849400000000001e-06"
+        iyz="-1.1285e-07"
+        izz="1.18109e-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/left_thumb_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/left_thumb_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_thumb_2_joint"
+    type="revolute">
+    <origin
+      xyz="0.0073431 0.011232 0.0052"
+      rpy="1.5708 0 -2.8798" />
+    <parent
+      link="left_thumb_1" />
+    <child
+      link="left_thumb_2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0.5864"
+      effort="2"
+      velocity="1" />
+  </joint>
+  <link
+    name="left_thumb_3">
+    <inertial>
+      <origin
+        xyz="-0.1022 0.04117 0.1138"
+        rpy="0 0 0" />
+      <mass
+        value="0.0189" />
+      <inertia
+        ixx="1.32723e-06"
+        ixy="-2.7513e-07"
+        ixz="-6.8709e-07"
+        iyy="2.26117e-06"
+        iyz="-1.8584999999999999e-07"
+        izz="2.02611e-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/left_thumb_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/left_thumb_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_thumb_3_joint"
+    type="revolute">
+    <origin
+      xyz="-0.031403 0.021069 -0.001299"
+      rpy="0 0 0" />
+    <parent
+      link="left_thumb_2" />
+    <child
+      link="left_thumb_3" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0.5"
+      effort="1"
+      velocity="2" />
+    <mimic
+        joint="left_thumb_2_joint"
+        multiplier="0.8024"
+        offset="0" />
+  </joint>
+  <link
+    name="thumb_force_sensor_2">
+    <inertial>
+      <origin
+        xyz="-2.43332410831479E-05 5.44992472824302E-05 -0.00109137310434532"
+        rpy="0 0 0" />
+      <mass
+        value="9.06121246347756E-05" />
+      <inertia
+        ixx="3.34748296277895E-10"
+        ixy="3.77358736112153E-14"
+        ixz="3.52273723202254E-13"
+        iyy="3.35821649138781E-10"
+        iyz="1.08964939417378E-12"
+        izz="5.88578470286886E-10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/thumb_force_sensor_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.411764705882353 0.411764705882353 0.411764705882353 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/thumb_force_sensor_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="thumb_force_sensor_2_joint"
+    type="fixed">
+    <origin
+      xyz="-0.011771 0.01699 -0.0077514"
+      rpy="1.8405 1.5705 -3.1416" />
+    <parent
+      link="left_thumb_3" />
+    <child
+      link="thumb_force_sensor_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_thumb_4">
+    <inertial>
+      <origin
+        xyz="-0.0163213563394194 0.00521928641987035 -0.00735104436106706"
+        rpy="0 0 0" />
+      <mass
+        value="0.00878940797618241" />
+      <inertia
+        ixx="5.94897206401284E-07"
+        ixy="2.54251361887254E-07"
+        ixz="5.54085992162603E-11"
+        iyy="7.79202349429445E-07"
+        iyz="8.8965111980696E-11"
+        izz="8.99824190088835E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/left_thumb_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/left_thumb_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_thumb_4_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0219027099524646 0.0128161397042487 -0.000300000000000231"
+      rpy="0 0 0" />
+    <parent
+      link="left_thumb_3" />
+    <child
+      link="left_thumb_4" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="3.14"
+      effort="1"
+      velocity="2" />
+    <mimic
+        joint="left_thumb_3_joint"
+        multiplier="0.9487"
+        offset="0" />
+  </joint>
+  <link
+    name="thumb_force_sensor_3">
+    <inertial>
+      <origin
+        xyz="1.23189696923445E-05 -0.000195538975680837 -0.000792005365136905"
+        rpy="0 0 0" />
+      <mass
+        value="0.000276852313379015" />
+      <inertia
+        ixx="5.41173490291494E-09"
+        ixy="-4.87700447907193E-13"
+        ixz="-6.30024679424638E-13"
+        iyy="2.55896079923591E-09"
+        iyz="3.82351468308955E-11"
+        izz="7.82764624814665E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/thumb_force_sensor_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.411764705882353 0.411764705882353 0.411764705882353 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/thumb_force_sensor_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="thumb_force_sensor_3_joint"
+    type="fixed">
+    <origin
+      xyz="-0.014598 0.014721 -0.0073103"
+      rpy="-0.18602 1.5708 0.84446" />
+    <parent
+      link="left_thumb_4" />
+    <child
+      link="thumb_force_sensor_3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="thumb_force_sensor_4">
+    <inertial>
+      <origin
+        xyz="8.78777579448042E-07 0.000270130629645191 -0.00100448285176212"
+        rpy="0 0 0" />
+      <mass
+        value="5.0258739392813E-05" />
+      <inertia
+        ixx="8.13578898809676E-11"
+        ixy="-2.55516319944346E-14"
+        ixz="2.01520896001805E-14"
+        iyy="1.70778531226233E-10"
+        iyz="-3.77224272937059E-12"
+        izz="2.11644262323665E-10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/thumb_force_sensor_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.411764705882353 0.411764705882353 0.411764705882353 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/thumb_force_sensor_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="thumb_force_sensor_4_joint"
+    type="fixed">
+    <origin
+      xyz="-0.028987 0.017301 -0.0073513"
+      rpy="2.0775 -1.5708 -3.14" />
+    <parent
+      link="left_thumb_4" />
+    <child
+      link="thumb_force_sensor_4" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="thumb_force_sensor_1">
+    <inertial>
+      <origin
+        xyz="-1.66858232989106E-05 1.15630711571557E-05 -0.00107124647646149"
+        rpy="0 0 0" />
+      <mass
+        value="0.000424630261957478" />
+      <inertia
+        ixx="9.01122065715071E-09"
+        ixy="2.06673401320352E-14"
+        ixz="2.31198472922275E-12"
+        iyy="4.94557964402789E-09"
+        iyz="1.1789230357668E-11"
+        izz="1.35651342806704E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/thumb_force_sensor_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.411764705882353 0.411764705882353 0.411764705882353 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/thumb_force_sensor_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="thumb_force_sensor_1_joint"
+    type="fixed">
+    <origin
+      xyz="-0.0087121 0.026305 -0.0089605"
+      rpy="1.2213 1.5708 2.44" />
+    <parent
+      link="left_thumb_2" />
+    <child
+      link="thumb_force_sensor_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_index_1">
+    <inertial>
+      <origin
+        xyz="-0.032229999999999995 0.0012 0.16325"
+        rpy="0 0 0" />
+      <mass
+        value="0.02456" />
+      <inertia
+        ixx="6.214600000000001e-06"
+        ixy="-9.95e-09"
+        ixz="-1.6013e-07"
+        iyy="6.14166e-06"
+        iyz="-2.5293000000000003e-07"
+        izz="1.37478e-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/left_index_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/left_index_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_index_1_joint"
+    type="revolute">
+    <origin
+      xyz="0.038679 0.00056467 0.1564"
+      rpy="1.6057 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_index_1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="1.4381"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="left_index_2">
+    <inertial>
+      <origin
+        xyz="-0.03349 0.024120000000000003 0.19052000000000002"
+        rpy="0 0 0" />
+      <mass
+        value="0.0124" />
+      <inertia
+        ixx="4.5689199999999996e-05"
+        ixy="4.3484e-07"
+        ixz="-4.3806e-07"
+        iyy="2.01044e-05"
+        iyz="2.1144599999999997e-05"
+        izz="2.587996e-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/left_index_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/left_index_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_index_2_joint"
+    type="revolute">
+    <origin
+      xyz="0.0034259 0.032596 -0.00055"
+      rpy="0 0 0" />
+    <parent
+      link="left_index_1" />
+    <child
+      link="left_index_2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="3.14"
+      effort="1"
+      velocity="2" />
+    <mimic
+        joint="left_index_1_joint"
+        multiplier="1.0843"
+        offset="0" />      
+  </joint>
+  <link
+    name="index_force_sensor_2">
+    <inertial>
+      <origin
+        xyz="-3.92383751107728E-06 0.000206469730308023 -0.000722888601662641"
+        rpy="0 0 0" />
+      <mass
+        value="0.000255748193489218" />
+      <inertia
+        ixx="4.7987768166369E-09"
+        ixy="8.64189585169657E-11"
+        ixz="1.5042180282212E-12"
+        iyy="2.43957953886802E-09"
+        iyz="-3.05164404848785E-11"
+        izz="7.12568463704975E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/index_force_sensor_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.411764705882353 0.411764705882353 0.411764705882353 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/index_force_sensor_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="index_force_sensor_2_joint"
+    type="fixed">
+    <origin
+      xyz="0.0081655 0.037446 -0.0060795"
+      rpy="-1.5708 1.5337 -1.9196" />
+    <parent
+      link="left_index_2" />
+    <child
+      link="index_force_sensor_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="index_force_sensor_3">
+    <inertial>
+      <origin
+        xyz="2.48712002496876E-05 -0.000345284176963695 -0.00133798867886123"
+        rpy="0 0 0" />
+      <mass
+        value="6.79653911304577E-05" />
+      <inertia
+        ixx="1.31976081706364E-10"
+        ixy="-5.65097989610319E-12"
+        ixz="-7.80109914730126E-13"
+        iyy="2.53434470713008E-10"
+        iyz="9.12174625129574E-12"
+        izz="2.80536896961268E-10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/index_force_sensor_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.411764705882353 0.411764705882353 0.411764705882353 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/index_force_sensor_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="index_force_sensor_3_joint"
+    type="fixed">
+    <origin
+      xyz="0.0086237 0.052572 -0.0060954"
+      rpy="-1.5708 1.5252 -0.87237" />
+    <parent
+      link="left_index_2" />
+    <child
+      link="index_force_sensor_3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="index_force_sensor_1">
+    <inertial>
+      <origin
+        xyz="-4.39980862962375E-06 0.000116492429592427 -0.000567426247601172"
+        rpy="0 0 0" />
+      <mass
+        value="0.000202794475942537" />
+      <inertia
+        ixx="3.38062498899254E-09"
+        ixy="5.06878020530947E-11"
+        ixz="2.18895973514009E-13"
+        iyy="1.96425205496783E-09"
+        iyz="-5.52626408641069E-12"
+        izz="5.28129594144099E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/index_force_sensor_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.411764705882353 0.411764705882353 0.411764705882353 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/index_force_sensor_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="index_force_sensor_1_joint"
+    type="fixed">
+    <origin
+      xyz="0.012046 0.019649 -0.006651"
+      rpy="-1.5708 1.5351 -1.3587" />
+    <parent
+      link="left_index_1" />
+    <child
+      link="index_force_sensor_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_middle_1">
+    <inertial>
+      <origin
+        xyz="-0.00983 -0.01618 0.16336"
+        rpy="0 0 0" />
+      <mass
+        value="0.02456" />
+      <inertia
+        ixx="6.2201e-06"
+        ixy="-3.08e-09"
+        ixz="6.238000000000001e-08"
+        iyy="6.08085e-06"
+        iyz="5.9592e-07"
+        izz="1.43272e-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/left_middle_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/left_middle_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_middle_1_joint"
+    type="revolute">
+    <origin
+      xyz="0.0171 0.00056467 0.157"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_middle_1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="1.4381"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="left_middle_2">
+    <inertial>
+      <origin
+        xyz="-0.00928 -0.02389 0.21371"
+        rpy="0 0 0" />
+      <mass
+        value="0.01299" />
+      <inertia
+        ixx="3.56712e-06"
+        ixy="-7.719999999999999e-09"
+        ixz="7.653e-08"
+        iyy="3.63641e-06"
+        iyz="3.398e-08"
+        izz="3.7324e-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/left_middle_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/left_middle_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_middle_2_joint"
+    type="revolute">
+    <origin
+      xyz="0.0034259 0.032596 -0.00055"
+      rpy="0 0 0" />
+    <parent
+      link="left_middle_1" />
+    <child
+      link="left_middle_2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="3.14"
+      effort="1"
+      velocity="2" />
+    <mimic
+        joint="left_middle_1_joint"
+        multiplier="1.0843"
+        offset="0" />
+  </joint>
+  <link
+    name="middle_force_sensor_2">
+    <inertial>
+      <origin
+        xyz="6.77351601335863E-07 2.94313228783732E-05 -0.000722425776846891"
+        rpy="0 0 0" />
+      <mass
+        value="0.000262573593923131" />
+      <inertia
+        ixx="5.04148765936938E-09"
+        ixy="1.87053180733119E-13"
+        ixz="-1.9219839991417E-14"
+        iyy="2.56777987860697E-09"
+        iyz="3.47150599586582E-12"
+        izz="7.49457837348363E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/middle_force_sensor_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.411764705882353 0.411764705882353 0.411764705882353 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/middle_force_sensor_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="middle_force_sensor_2_joint"
+    type="fixed">
+    <origin
+      xyz="0.009086 0.040962 -0.0061003"
+      rpy="-2.5053 1.5708 -2.8781" />
+    <parent
+      link="left_middle_2" />
+    <child
+      link="middle_force_sensor_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="middle_force_sensor_3">
+    <inertial>
+      <origin
+        xyz="-8.06940798625533E-08 -0.000365444698807449 -0.00127684015304248"
+        rpy="0 0 0" />
+      <mass
+        value="6.64914272946033E-05" />
+      <inertia
+        ixx="1.27227716200634E-10"
+        ixy="-8.96643675852232E-15"
+        ixz="-8.77104798931421E-15"
+        iyy="2.43691020872239E-10"
+        iyz="7.61276541489738E-12"
+        izz="2.75875028961867E-10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/middle_force_sensor_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.411764705882353 0.411764705882353 0.411764705882353 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/middle_force_sensor_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="middle_force_sensor_3_joint"
+    type="fixed">
+    <origin
+      xyz="0 0.014323 -0.0048039"
+      rpy="-1.0472 0 0" />
+    <parent
+      link="middle_force_sensor_2" />
+    <child
+      link="middle_force_sensor_3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="middle_force_sensor_1">
+    <inertial>
+      <origin
+        xyz="-2.38805233448991E-07 0.00011657525419928 -0.00056742615707274"
+        rpy="0 0 0" />
+      <mass
+        value="0.000202794522112888" />
+      <inertia
+        ixx="3.3824362190208E-09"
+        ixy="2.84614711222524E-14"
+        ixz="2.15581663153047E-14"
+        iyy="1.96244127906411E-09"
+        iyz="-5.53035966625832E-12"
+        izz="5.28129636598898E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/middle_force_sensor_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.411764705882353 0.411764705882353 0.411764705882353 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/middle_force_sensor_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="middle_force_sensor_1_joint"
+    type="fixed">
+    <origin
+      xyz="0.012046 0.019649 -0.006651"
+      rpy="-2.4062 1.5708 -2.1941" />
+    <parent
+      link="left_middle_1" />
+    <child
+      link="middle_force_sensor_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_ring_1">
+    <inertial>
+      <origin
+        xyz="0.011519999999999999 0.0010500000000000002 0.16331"
+        rpy="0 0 0" />
+      <mass
+        value="0.02564" />
+      <inertia
+        ixx="6.281510000000001e-06"
+        ixy="1.501e-08"
+        ixz="2.6019e-07"
+        iyy="6.20342e-06"
+        iyz="-2.1600999999999999e-07"
+        izz="1.4026700000000002e-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/left_ring_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/left_ring_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_ring_1_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0045302 0.00056467 0.15683"
+      rpy="1.5184 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_ring_1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="1.4381"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="left_ring_2">
+    <inertial>
+      <origin
+        xyz="0.01267 0.024120000000000003 0.19037"
+        rpy="0 0 0" />
+      <mass
+        value="0.0124" />
+      <inertia
+        ixx="4.56148e-05"
+        ixy="-1.40969e-06"
+        ixz="1.28852e-06"
+        iyy="2.01044e-05"
+        iyz="2.110204e-05"
+        izz="2.595436e-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/left_ring_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/left_ring_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_ring_2_joint"
+    type="revolute">
+    <origin
+      xyz="0.0034259 0.032596 -0.00055"
+      rpy="0 0 0" />
+    <parent
+      link="left_ring_1" />
+    <child
+      link="left_ring_2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="3.14"
+      effort="1"
+      velocity="2" />
+    <mimic
+        joint="left_ring_1_joint"
+        multiplier="1.0843"
+        offset="0" />
+  </joint>
+  <link
+    name="ring_force_sensor_2">
+    <inertial>
+      <origin
+        xyz="1.52347834277144E-05 0.00020594419620118 -0.000722888366235852"
+        rpy="0 0 0" />
+      <mass
+        value="0.000255748190883603" />
+      <inertia
+        ixx="4.79445247032037E-09"
+        ixy="-1.32856442479421E-10"
+        ixz="-1.33138092961345E-12"
+        iyy="2.4439035683218E-09"
+        iyz="-3.05245098030189E-11"
+        izz="7.12568419691734E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/ring_force_sensor_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.411764705882353 0.411764705882353 0.411764705882353 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/ring_force_sensor_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ring_force_sensor_2_joint"
+    type="fixed">
+    <origin
+      xyz="0.0081655 0.037446 -0.0060795"
+      rpy="1.5708 1.5151 1.222" />
+    <parent
+      link="left_ring_2" />
+    <child
+      link="ring_force_sensor_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="ring_force_sensor_3">
+    <inertial>
+      <origin
+        xyz="-0.018987750288989 0.0666666818382249 0.0130188172795586"
+        rpy="0 0 0" />
+      <mass
+        value="6.79657632016268E-05" />
+      <inertia
+        ixx="1.32111152752531E-10"
+        ixy="7.12098038272761E-12"
+        ixz="-8.55173235015504E-13"
+        iyy="2.66757366976318E-10"
+        iyz="1.63108112511305E-11"
+        izz="2.67085052477174E-10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/ring_force_sensor_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.411764705882353 0.411764705882353 0.411764705882353 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/ring_force_sensor_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ring_force_sensor_3_joint"
+    type="fixed">
+    <origin
+      xyz="0.0086202 -0.01538 -0.028643"
+      rpy="1.7654 1.5138 1.9769" />
+    <parent
+      link="left_ring_2" />
+    <child
+      link="ring_force_sensor_3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="ring_force_sensor_1">
+    <inertial>
+      <origin
+        xyz="6.00203522563292E-06 0.000116421389792051 -0.000567426346187727"
+        rpy="0 0 0" />
+      <mass
+        value="0.000202794434376474" />
+      <inertia
+        ixx="3.37837011170993E-09"
+        ixy="-7.58787529691318E-11"
+        ixz="-2.74580424569917E-13"
+        iyy="1.96650618264834E-09"
+        iyz="-5.5239313808051E-12"
+        izz="5.28129521919661E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/ring_force_sensor_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.411764705882353 0.411764705882353 0.411764705882353 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/ring_force_sensor_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ring_force_sensor_1_joint"
+    type="fixed">
+    <origin
+      xyz="0.012046 0.019649 -0.006651"
+      rpy="1.5708 1.5172 1.7829" />
+    <parent
+      link="left_ring_1" />
+    <child
+      link="ring_force_sensor_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_little_1">
+    <inertial>
+      <origin
+        xyz="0.03325 0.00124 0.15954"
+        rpy="0 0 0" />
+      <mass
+        value="0.02456" />
+      <inertia
+        ixx="6.15542e-06"
+        ixy="2.33e-08"
+        ixz="5.1287e-07"
+        iyy="6.1396099999999995e-06"
+        iyz="-2.3261000000000002e-07"
+        izz="1.41681e-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/left_little_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/left_little_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_little_1_joint"
+    type="revolute">
+    <origin
+      xyz="-0.025916 0.00056467 0.15365"
+      rpy="1.4661 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_little_1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="1.4381"
+      effort="1"
+      velocity="2" />
+  </joint>
+  <link
+    name="left_little_2">
+    <inertial>
+      <origin
+        xyz="0.03867 -0.02782 0.20235"
+        rpy="0 0 0" />
+      <mass
+        value="0.009720000000000001" />
+      <inertia
+        ixx="1.6975399999999999e-06"
+        ixy="-1.73e-09"
+        ixz="1.8642e-07"
+        iyy="1.7773499999999998e-06"
+        iyz="-2.2100000000000003e-08"
+        izz="2.8921e-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/left_little_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/left_little_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_little_2_joint"
+    type="revolute">
+    <origin
+      xyz="0.0034259 0.032596 -0.00055"
+      rpy="0 0 0" />
+    <parent
+      link="left_little_1" />
+    <child
+      link="left_little_2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="3.14"
+      effort="1"
+      velocity="2" />
+    <mimic
+        joint="left_little_1_joint"
+        multiplier="1.0843"
+        offset="0" />  
+  </joint>
+  <link
+    name="little_force_sensor_2">
+    <inertial>
+      <origin
+        xyz="0.0233410916816945 -0.0206057990619895 -0.0197632528662803"
+        rpy="0 0 0" />
+      <mass
+        value="0.000280246748486092" />
+      <inertia
+        ixx="5.38916583855123E-09"
+        ixy="5.7201609474287E-11"
+        ixz="-2.9189249553302E-10"
+        iyy="6.63241313034516E-09"
+        iyz="-2.29244493996819E-09"
+        izz="4.1372515955786E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/little_force_sensor_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.411764705882353 0.411764705882353 0.411764705882353 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/little_force_sensor_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="little_force_sensor_2_joint"
+    type="fixed">
+    <origin
+      xyz="0.0086237 0.053732 0.019972"
+      rpy="1.2692 1.4573 1.9687" />
+    <parent
+      link="left_little_2" />
+    <child
+      link="little_force_sensor_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="little_force_sensor_3">
+    <inertial>
+      <origin
+        xyz="-6.37037929382966E-05 -0.000437210532086563 -0.00112816117341033"
+        rpy="0 0 0" />
+      <mass
+        value="6.10536670141782E-05" />
+      <inertia
+        ixx="1.11591596284104E-10"
+        ixy="1.4892328691308E-11"
+        ixz="1.18294492342107E-12"
+        iyy="2.17206534672885E-10"
+        iyz="8.0788357087695E-12"
+        izz="2.52052305204087E-10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/little_force_sensor_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.411764705882353 0.411764705882353 0.411764705882353 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/little_force_sensor_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="little_force_sensor_3_joint"
+    type="fixed">
+    <origin
+      xyz="0.0063973 0.042707 -0.0061154"
+      rpy="1.5708 1.4336 2.2761" />
+    <parent
+      link="left_little_2" />
+    <child
+      link="little_force_sensor_3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="little_force_sensor_1">
+    <inertial>
+      <origin
+        xyz="-0.00420187695671251 -0.0375159744513207 0.0151221430114555"
+        rpy="0 0 0" />
+      <mass
+        value="0.000202794502264301" />
+      <inertia
+        ixx="3.37621922269687E-09"
+        ixy="-5.57638291775712E-11"
+        ixz="1.64362343088757E-10"
+        iyy="2.88227222909127E-09"
+        iyz="1.47325401248571E-09"
+        izz="4.36768276890867E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/little_force_sensor_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.411764705882353 0.411764705882353 0.411764705882353 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/little_force_sensor_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="little_force_sensor_1_joint"
+    type="fixed">
+    <origin
+      xyz="0.0098773 0.060279 -0.0066672"
+      rpy="1.5708 1.4597 1.2289" />
+    <parent
+      link="left_little_1" />
+    <child
+      link="little_force_sensor_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="palm_force_sensor">
+    <inertial>
+      <origin
+        xyz="-0.000120093335186366 0.000717297413656857 -0.000692889069963995"
+        rpy="0 0 0" />
+      <mass
+        value="0.00240886556268531" />
+      <inertia
+        ixx="1.79237847416289E-07"
+        ixy="-3.62335251185339E-10"
+        ixz="2.06838829647024E-10"
+        iyy="5.01887324843794E-07"
+        iyz="-4.23537057642119E-10"
+        izz="6.80017237748917E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/palm_force_sensor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.411764705882353 0.411764705882353 0.411764705882353 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_left_with_force_sensor/meshes/palm_force_sensor.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="palm_force_sensor_joint"
+    type="fixed">
+    <origin
+      xyz="0.00036819 0.012296 0.1196"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="palm_force_sensor" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
